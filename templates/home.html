@@ -1,44 +1,12 @@
 <ion-view title="" hide-back-button="true" id="page2">
   <ion-content padding="true" class="has-header">
-    <!-- {{movie}} -->
-
     <ion-list id="movies-list4" ng-repeat="m in movie">
       <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabsController.detail({id:m.id})">
         <img src="{{m.img}}">
         <h2>{{m.title}}</h2>
-        <p style="white-space:normal;">Date 20.02.2021
-          <br> This is a sample. Cox this is know as sample. Ok</p>
+        <p style="white-space:normal;">Year : {{m.year}}
+          <br>IMDB : {{m.rate}}</p>
       </ion-item>
     </ion-list>
-    <a class="list card" style="display:block;text-decoration:none;" ui-sref="tabsController.detail()" id="home-card21">
-      <ion-item class="item-avatar" id="home-list-item3">
-        <img>
-        <h2>Item</h2>
-      </ion-item>
-      <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
-        <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
-      </div>
-      <div class="item item-body" id="home-list-item-container2">
-        <div id="home-markdown2" class="show-list-numbers-and-dots">
-          <p style="margin-top:0px;color:#000000;">Some friendly
-            <strong>markdown</strong>
-          </p>
-        </div>
-      </div>
-      <ion-item class="item-icon-left energized" id="home-list-item4">
-        <i class="icon ion-android-star-half"></i>6.5
-        <span class="item-note">6.5</span>
-      </ion-item>
-    </a>
-    <div class="spacer" style="width: 300px; height: 53px;"></div>
-    <div class="list">
-      <a class="item my-item item-image" collection-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] track by $index" collection-item-height="180" collection-item-width="'50%'" ui-sref="tabsController.detail()">
-
-        <img class="full-image" src="https://image.tmdb.org/t/p/w185/9BacU3JOXFyHc5ZqrX7kM9UjpCw.jpg" style="height:100%;">
-        <h5>Title {{i}}</h5>
-        <p>{{i}}</p>
-
-      </a>
-    </div>
   </ion-content>
 </ion-view>
