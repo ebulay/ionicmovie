@@ -1,0 +1,12 @@
+<ion-view title="Detail" id="page5">
+  <ion-content padding="true" class="has-header">
+    {{news.title}}
+    <div>
+      <img ng-src="{{news.img}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <a class="item" href="{{p.url}}" target="_blank" ng-repeat="p in news.details.download">{{p.site}}<span class="badge badge-assertive">{{p.size}}</span> </a>
+        <div class="spacer" style="width: 300px; height: 53px;"></div>
+        <a class="item-icon-left assertive item" href="{{p.url}}" target="_blank" ng-repeat="p in news.details.mega"><i class="icon ion-ios-play"></i>Mega.nz (Only PC)</a>
+        <a class="item-icon-left assertive item" ui-sref="tabsController.watch({id:p.id})"  ng-repeat="p in news.details.yadi"><i class="icon ion-ios-play"></i>Yandex (PC and Mobile)</a> 
+  </ion-content>
+</ion-view>
