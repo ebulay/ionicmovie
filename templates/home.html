@@ -2,7 +2,7 @@
   <ion-content padding="true" class="has-header">
     <ion-list id="movies-list4" ng-repeat="m in movie">
       <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabsController.detail({id:m.id})">
-        <img src="{{m.img}}">
+        <img style="display: block;width: 100%;height: 370px;margin-left: auto;margin-right: auto;" src="{{m.img}}">
         <h2>{{m.title}}</h2>
         <p style="white-space:normal;">Year : {{m.year}}
           <br>IMDB : {{m.rate}}</p>
