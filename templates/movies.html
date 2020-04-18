@@ -1,0 +1,22 @@
+<ion-view title="Movies" id="page7">
+  <ion-content padding="false" class="has-header">
+    <ion-list id="movies-list4">
+      <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabsController.detail()">
+        <img src="https://channelmyanmar.org/wp-content/uploads/2020/04/TO-138x200.jpg">
+        <h2>Item Name</h2>
+        <p style="white-space:normal;">Date 20.02.2021
+          <br> This is a sample. Cox this is know as sample. Ok</p>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list id="movies-list4" ng-repeat="d in data">
+      <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabsController.detail({id:d.id})">
+        <img ng-src="{{d.img}}">
+        <h2>{{d.title}}</h2>
+        <p style="white-space:normal;">{{d.rate}}
+          <br> {{d.type}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
